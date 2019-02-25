@@ -6,15 +6,14 @@ private double branchAngle2 = 0.1;
 public void setup() 
 {   
 	size(800,800); 
-  frameRate(200);
 } 
 public void draw() 
 { 
 	background(0);     
-  stroke(0,255,0,80);
+  stroke(0,255,0);
   strokeWeight(10);  
 	drawBranches(400,400,100,3*Math.PI/2,10); 
-  branchAngle2+=0.05;
+  branchAngle2+=0.1;
 } 
 public void drawBranches(int x,int y, double branchLength, double angle,double thickness) 
 {  
